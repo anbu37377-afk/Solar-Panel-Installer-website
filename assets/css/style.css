@@ -1,0 +1,288 @@
+/* 
+=====================================================
+  SolarGrid - Solar Panel Installer Website
+  Theme: Solar Green, Dark Blue, Light Gray
+=====================================================
+*/
+
+/* --- Root Variables & Theme Colors --- */
+:root {
+    --primary-color: #2ecc71;
+    /* Solar Green */
+    --secondary-color: #0c2b4b;
+    /* Dark Blue */
+    --tertiary-color: #f8f9fa;
+    /* Light Gray */
+    --text-dark: #212529;
+    --text-light: #ffffff;
+    --bg-light: #ffffff;
+    --bg-dark: #121212;
+    --card-bg-light: #ffffff;
+    --card-bg-dark: #1e1e1e;
+    --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --transition-speed: 0.3s;
+}
+
+[data-bs-theme="dark"] {
+    --primary-color: #2ecc71;
+    --secondary-color: #1a3c61;
+    --tertiary-color: #2c2c2c;
+    --text-dark: #e0e0e0;
+    --bg-light: #121212;
+    --bg-dark: #000000;
+    --card-bg-light: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/* --- Global Styles --- */
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+/* --- Utilities --- */
+.bg-tertiary {
+    background-color: var(--tertiary-color) !important;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #08203a;
+    border-color: #08203a;
+}
+
+/* --- Header & Navbar --- */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-light);
+    transition: background-color var(--transition-speed);
+}
+
+[data-bs-theme="dark"] .navbar {
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--primary-color) !important;
+}
+
+.brand-text-secondary {
+    color: var(--secondary-color);
+}
+
+[data-bs-theme="dark"] .brand-text-secondary {
+    color: #fff;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    padding: 100px 0;
+    background-color: var(--secondary-color);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(12, 43, 75, 0.9) 0%, rgba(46, 204, 113, 0.4) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Cards --- */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--card-bg-light);
+}
+
+[data-bs-theme="dark"] .card {
+    background-color: var(--card-bg-light);
+    color: #e0e0e0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* --- Section Headings --- */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-title span {
+    color: var(--primary-color);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 80px 0 30px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer a:hover {
+    color: var(--primary-color);
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+/* --- Back to Top --- */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+}
+
+/* --- Theme Toggle --- */
+.theme-toggle {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+[data-bs-theme="dark"] .theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Dashboard --- */
+.sidebar {
+    min-height: 100vh;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background-color: var(--primary-color);
+    color: white !important;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* Mobile Responsiveness for Tables and Content */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Ensure full width on mobile */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .p-5 {
+        padding: 1.5rem !important;
+    }
+    
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarGrid - Best Solar Panel Installation Services</title>
+    <meta name="description"
+        content="Professional solar panel installation for homeowners and businesses. Save energy with SolarGrid.">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/images/logo.svg" alt="SolarGrid" width="40" height="40">
+                <span>Solar<span class="brand-text-secondary">Grid</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SolarGrid</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+
+                    </ul>
+                    <div
+                        class="d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-2 mt-3 mt-lg-0">
+                        <button class="btn btn-outline-secondary border-0 theme-toggle text-start text-lg-center"
+                            id="themeToggle" title="Switch Theme">
+                            <i class="bi bi-moon-fill"></i>
+                            <span class="d-lg-none ms-2">Dark Mode</span>
+                        </button>
+                        <a href="login.html" class="btn btn-outline-primary btn-sm">Login</a>
+                        <a href="register.html" class="btn btn-primary btn-sm">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Power Your Home with Free Solar Energy</h1>
+                    <p class="lead mb-4">Reduce electricity bills and save the planet with our top-tier solar panel
+                        installation services. Reliable, efficient, and affordable.</p>
+                    <div class="d-flex gap-3">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Get a Quote</a>
+                        <a href="services.html" class="btn btn-outline-light btn-lg">Our Services</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 text-center">
+                    <img src="https://placehold.co/600x400/2ecc71/white?text=Solar+Installation"
+                        alt="Solar Installation" class="img-fluid rounded shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <span>What We Do</span>
+                <h2>Our Premium Services</h2>
+                <p class="text-muted">We provide end-to-end solar solutions for every need.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-house-door-fill service-icon"></i>
+                            <h3 class="h4 card-title">Residential Solar</h3>
+                            <p class="card-text">Custom solar solutions for homes of all sizes. Save on monthly bills.
+                            </p>
+                            <a href="service-details.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-buildings-fill service-icon"></i>
+                            <h3 class="h4 card-title">Commercial Solar</h3>
+                            <p class="card-text">Power your business with sustainable energy. High efficiency systems.
+                            </p>
+                            <a href="service-details.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-body">
+                            <i class="bi bi-tools service-icon"></i>
+                            <h3 class="h4 card-title">Maintenance & Repair</h3>
+                            <p class="card-text">Keep your system running at peak performance with our support.</p>
+                            <a href="service-details.html" class="btn btn-sm btn-outline-primary mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="py-5 bg-tertiary">
+        <div class="container">
+            <div class="section-title">
+                <span>How It Works</span>
+                <h2>Simple 4-Step Process</h2>
+            </div>
+            <div class="row text-center position-relative">
+                <div class="col-md-3 mb-4">
+                    <div class="process-step">
+                        <img src="https://placehold.co/100x100/2ecc71/white?text=1" class="rounded-circle shadow mb-3"
+                            alt="Step 1">
+                        <h5>Consultation</h5>
+                        <p class="text-muted small">Free site survey and energy analysis.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="process-step">
+                        <img src="https://placehold.co/100x100/0c2b4b/white?text=2" class="rounded-circle shadow mb-3"
+                            alt="Step 2">
+                        <h5>Proposal</h5>
+                        <p class="text-muted small">Custom system design and financing options.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="process-step">
+                        <img src="https://placehold.co/100x100/2ecc71/white?text=3" class="rounded-circle shadow mb-3"
+                            alt="Step 3">
+                        <h5>Installation</h5>
+                        <p class="text-muted small">Quick, professional installation by experts.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="process-step">
+                        <img src="https://placehold.co/100x100/0c2b4b/white?text=4" class="rounded-circle shadow mb-3"
+                            alt="Step 4">
+                        <h5>Activation</h5>
+                        <p class="text-muted small">System turned on and savings begin!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://placehold.co/600x600/0c2b4b/white?text=Clean+Energy" alt="Why Choose Us"
+                        class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <span class="text-primary fw-bold text-uppercase">Why Choose Us</span>
+                    <h2 class="mb-4">We Are The Best Solar Energy Provider</h2>
+                    <p class="mb-4">With over 10 years of experience, we deliver quality installations that last. Our
+                        team of certified engineers ensures maximum efficiency for your setup.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+                            <span>Certified High Efficiency Panels</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+                            <span>25-Year Warranty Guarantee</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+                            <span>Expert Installation Team</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="bi bi-check-circle-fill text-primary me-3 fs-5"></i>
+                            <span>24/7 Monitoring & Support</span>
+                        </li>
+                    </ul>
+                    <a href="about.html" class="btn btn-primary mt-3">About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Projects -->
+    <section class="py-5 bg-tertiary">
+        <div class="container">
+            <div class="section-title">
+                <span>Portfolio</span>
+                <h2>Recent Installations</h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-8">
+                    <img src="https://placehold.co/800x400/eee/333?text=Commercial+Project"
+                        class="img-fluid rounded w-100 h-100 object-fit-cover shadow" alt="Project 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://placehold.co/400x400/2ecc71/white?text=Residential"
+                        class="img-fluid rounded w-100 h-100 object-fit-cover shadow" alt="Project 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://placehold.co/400x300/0c2b4b/white?text=Battery"
+                        class="img-fluid rounded w-100 h-100 object-fit-cover shadow" alt="Project 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="https://placehold.co/400x300/eee/333?text=Farm"
+                        class="img-fluid rounded w-100 h-100 object-fit-cover shadow" alt="Project 4">
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="card h-100 bg-primary text-white d-flex align-items-center justify-content-center text-center p-3 border-0 rounded shadow">
+                        <div>
+                            <h3 class="fw-bold">500+</h3>
+                            <p class="mb-0">Projects Completed</p>
+                            <a href="home-2.html" class="btn btn-outline-light btn-sm mt-3">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-5 text-white position-relative"
+        style="background: linear-gradient(rgba(12, 43, 75, 0.9), rgba(12, 43, 75, 0.8)), url('https://placehold.co/1920x600/2ecc71/000?text=Nature') center/cover fixed;">
+        <div class="container text-center">
+            <div class="row py-4">
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <img src="https://placehold.co/60/white/0c2b4b?text=CO2"
+                        class="rounded-circle mb-3 p-2 bg-white bg-opacity-10" alt="Icon">
+                    <h2 class="fw-bold">10k+ Tons</h2>
+                    <p class="text-white-50">CO2 Reduced</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0">
+                    <img src="https://placehold.co/60/white/0c2b4b?text=$"
+                        class="rounded-circle mb-3 p-2 bg-white bg-opacity-10" alt="Icon">
+                    <h2 class="fw-bold">$5M+</h2>
+                    <p class="text-white-50">Client Savings</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="https://placehold.co/60/white/0c2b4b?text=Trees"
+                        class="rounded-circle mb-3 p-2 bg-white bg-opacity-10" alt="Icon">
+                    <h2 class="fw-bold">50k+</h2>
+                    <p class="text-white-50">Trees Planted</p>
+                </div>
+                <div class="col-md-3 col-6">
+                    <img src="https://placehold.co/60/white/0c2b4b?text=Home"
+                        class="rounded-circle mb-3 p-2 bg-white bg-opacity-10" alt="Icon">
+                    <h2 class="fw-bold">1,200+</h2>
+                    <p class="text-white-50">Happy Homes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-title">
+                <span>Testimonials</span>
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p>"SolarGrid transformed our energy consumption. The team was professional and the
+                                installation was quick."</p>
+                            <h6 class="fw-bold mt-3">- John Doe</h6>
+                            <span class="text-muted small">Homeowner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-half"></i>
+                            </div>
+                            <p>"Great service and support. Our factory now runs 60% on solar. Highly recommended!"</p>
+                            <h6 class="fw-bold mt-3">- Sarah Smith</h6>
+                            <span class="text-muted small">Business Owner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <div class="mb-3 text-warning">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p>"Professional, clean, and honest. The best investment we've made for our home."</p>
+                            <h6 class="fw-bold mt-3">- Michael Brown</h6>
+                            <span class="text-muted small">Resident</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Teaser -->
+    <section class="py-5 bg-tertiary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x600/2ecc71/white?text=Questions?"
+                        class="img-fluid rounded shadow" alt="FAQ">
+                </div>
+                <div class="col-lg-7 ps-lg-5">
+                    <span class="text-primary fw-bold">Support</span>
+                    <h2 class="mb-4">Common Questions</h2>
+                    <div class="accordion" id="accordionHome">
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne">
+                                    Do I need a battery for my solar system?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionHome">
+                                <div class="accordion-body">While not strictly necessary, batteries allow you to store
+                                    energy for use at night or during outages, maximizing independence.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm rounded overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo">
+                                    How much maintenance is required?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionHome">
+                                <div class="accordion-body">Very experienced. Solar panels are durable and typically
+                                    only require cleaning a few times a year.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm rounded overflow-hidden">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree">
+                                    What is the payback period?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionHome">
+                                <div class="accordion-body">Most residential systems pay for themselves in 5-8 years
+                                    through energy savings and tax incentives.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3">
+                        <img src="assets/images/logo.svg" alt="SolarGrid" width="40" height="40"
+                            style="filter: brightness(0) invert(1);">
+                        <h4 class="text-white mb-0">SolarGrid</h4>
+                    </a>
+                    <p class="text-white-50">Empowering your home with sustainable solar energy solutions. Join the
+                        green revolution today.</p>
+                    <div class="d-flex gap-3 social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plan</a></li>
+                        <li><a href="blog.html">Latest Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="service-details.html">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-white-50">Subscribe to get the latest solar news.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                            <button class="btn btn-primary" type="button"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0 text-white-50">&copy; 2026 SolarGrid. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="btn btn-primary rounded-circle"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

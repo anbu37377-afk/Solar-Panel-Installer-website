@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SolarGrid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .page-header {
+            background: var(--secondary-color);
+            padding: 60px 0;
+            text-align: center;
+            color: white
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/images/logo.svg" alt="SolarGrid" width="40" height="40">
+                <span>Solar<span class="brand-text-secondary">Grid</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="home-2.html">Home 2</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+
+                    </ul>
+                    <div
+                        class="d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-2 mt-3 mt-lg-0">
+                        <button class="btn btn-outline-secondary border-0 theme-toggle text-start text-lg-center"
+                            id="themeToggle" title="Switch Theme">
+                            <i class="bi bi-moon-fill"></i>
+                            <span class="d-lg-none ms-2">Dark Mode</span>
+                        </button>
+                        <a href="login.html" class="btn btn-outline-primary btn-sm">Login</a>
+                        <a href="register.html" class="btn btn-primary btn-sm">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Our Blog</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white-50 text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Featured Post Section -->
+    <section class="py-5 bg-tertiary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/800x500/0c2b4b/white?text=Featured+Story"
+                        class="img-fluid rounded shadow-lg w-100" alt="Featured">
+                </div>
+                <div class="col-lg-5 ps-lg-5">
+                    <span class="badge bg-danger mb-2">Editor's Pick</span>
+                    <h2 class="display-6 fw-bold mb-3">Solar Breakthrough: New Panels Reach 40% Efficiency</h2>
+                    <p class="text-muted mb-4">Scientists have discovered a new material that doubles the efficiency of
+                        traditional silicon panels, promising a brighter future for renewable energy.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="https://placehold.co/50x50/333/fff?text=A" class="rounded-circle me-3" alt="Author">
+                        <div>
+                            <h6 class="mb-0 fw-bold">Dr. Alan Grant</h6>
+                            <small class="text-muted">Jan 28, 2026 • 5 min read</small>
+                        </div>
+                    </div>
+                    <a href="blog-details.html" class="btn btn-outline-primary">Read Full Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <!-- Search for mobile ordered first naturally if we want, but usually sidebar is search. Let's put search in sidebar -->
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://placehold.co/400x250/2ecc71/white?text=Solar+Tips"
+                                    class="card-img-top" alt="Blog 1">
+                                <div class="card-body">
+                                    <span class="badge bg-primary mb-2">Tips</span>
+                                    <h5 class="card-title fw-bold">10 Mobile Tips to Maintain Your Solar Panels</h5>
+                                    <p class="card-text text-muted small">Cleaning and maintenance guidelines to ensure
+                                        maximum efficiency all year round.</p>
+                                    <a href="blog-details.html" class="text-primary text-decoration-none fw-bold">Read
+                                        More <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://placehold.co/400x250/0c2b4b/white?text=Energy" class="card-img-top"
+                                    alt="Blog 2">
+                                <div class="card-body">
+                                    <span class="badge bg-secondary mb-2">Industry</span>
+                                    <h5 class="card-title fw-bold">The Future of Green Energy in 2026</h5>
+                                    <p class="card-text text-muted small">How government policies and new tech are
+                                        shaping the renewable landscape.</p>
+                                    <a href="blog-details.html" class="text-primary text-decoration-none fw-bold">Read
+                                        More <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://placehold.co/400x250/eee/333?text=Cost" class="card-img-top"
+                                    alt="Blog 3">
+                                <div class="card-body">
+                                    <span class="badge bg-warning text-dark mb-2">Finance</span>
+                                    <h5 class="card-title fw-bold">Is Solar Worth the Investment?</h5>
+                                    <p class="card-text text-muted small">Breaking down the ROI of residential solar
+                                        installation over 20 years.</p>
+                                    <a href="blog-details.html" class="text-primary text-decoration-none fw-bold">Read
+                                        More <i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card mb-4 border-0 shadow-sm p-3">
+                        <h4 class="mb-3">Search</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search blog...">
+                            <button class="btn btn-primary"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 border-0 shadow-sm p-3">
+                        <h4 class="mb-3">Categories</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Installation
+                                <span class="badge bg-primary rounded-pill">14</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Maintenance
+                                <span class="badge bg-primary rounded-pill">8</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Industry News
+                                <span class="badge bg-primary rounded-pill">5</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Tips & Tricks
+                                <span class="badge bg-primary rounded-pill">12</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Highlight Section -->
+    <section class="py-5 bg-tertiary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="position-relative rounded overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/800x450/333/eee?text=Video+Thumbnail" class="img-fluid w-100"
+                            alt="Video">
+                        <a href="#"
+                            class="position-absolute top-50 start-50 translate-middle btn btn-light rounded-circle p-3 shadow">
+                            <i class="bi bi-play-fill fs-1 text-primary"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <span class="text-primary fw-bold text-uppercase">Webinar Series</span>
+                    <h3 class="fw-bold">Understanding Net Metering 2.0</h3>
+                    <p class="text-muted">Join our Chief Technical Officer as he explains the latest changes to net
+                        metering policies and how they affect your solar savings in 2026.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-dark"><i class="bi bi-youtube me-2"></i>Watch Now</a>
+                        <a href="#" class="btn btn-link text-decoration-none">View All Videos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription - Unique Style -->
+    <section class="py-5 position-relative text-white overflow-hidden">
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: linear-gradient(45deg, var(--primary-color), var(--secondary-color)); z-index: -1;">
+        </div>
+        <div class="container text-center position-relative">
+            <i class="bi bi-envelope-paper-heart fs-1 mb-3 d-inline-block"></i>
+            <h2 class="fw-bold mb-3">Green Energy Insights</h2>
+            <p class="lead mb-4 col-lg-6 mx-auto">Join 10,000+ subscribers getting the latest solar news, tips, and
+                exclusive offers delivered to their inbox.</p>
+            <form class="row justify-content-center g-2">
+                <div class="col-md-5">
+                    <input type="email" class="form-control form-control-lg border-0 shadow-sm"
+                        placeholder="Your email address">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-dark btn-lg shadow-sm">Subscribe Now</button>
+                </div>
+            </form>
+            <small class="d-block mt-3 opacity-75">No spam. Unsubscribe anytime.</small>
+        </div>
+    </section>
+
+    <!-- Trending Tags Cloud -->
+    <section class="py-5 bg-tertiary">
+        <div class="container">
+            <h4 class="mb-4 text-center">Trending Topics</h4>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#SolarPower</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#GreenEnergy</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#Sustainability</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#Tesla</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#ClimateChange</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#OffGrid</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#SaveMoney</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#Renewables</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#SmartHome</a>
+                <a href="#" class="btn btn-outline-secondary rounded-pill">#Efficiency</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none mb-3">
+                        <img src="assets/images/logo.svg" alt="SolarGrid" width="40" height="40"
+                            style="filter: brightness(0) invert(1);">
+                        <h4 class="text-white mb-0">SolarGrid</h4>
+                    </a>
+                    <p class="text-white-50">Empowering your home with sustainable solar energy solutions. Join the
+                        green revolution today.</p>
+                    <div class="d-flex gap-3 social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing Plan</a></li>
+                        <li><a href="blog.html">Latest Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="service-details.html">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="text-white-50">Subscribe to get the latest solar news.</p>
+                    <form>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                            <button class="btn btn-primary" type="button"><i class="bi bi-send-fill"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-center">
+                <p class="mb-0 text-white-50">&copy; 2026 SolarGrid. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTop" class="btn btn-primary rounded-circle"><i class="bi bi-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
