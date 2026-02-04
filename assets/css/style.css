@@ -225,6 +225,8 @@ footer a:hover {
     padding: 8px;
     border-radius: 50%;
     transition: background 0.3s;
+    color: var(--text-dark);
+    border: 1px solid transparent;
 }
 
 .theme-toggle:hover {
@@ -233,6 +235,25 @@ footer a:hover {
 
 [data-bs-theme="dark"] .theme-toggle:hover {
     background: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile/Offcanvas Theme Toggle Styles */
+@media (max-width: 991.98px) {
+    .offcanvas .theme-toggle {
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px;
+        background-color: transparent;
+        border: 1px solid var(--text-dark) !important;
+        margin-bottom: 10px;
+    }
+
+    .offcanvas .theme-toggle i {
+        margin-right: 10px;
+    }
 }
 
 /* --- Dashboard --- */
@@ -276,11 +297,11 @@ footer a:hover {
         padding-left: 15px;
         padding-right: 15px;
     }
-    
+
     .p-5 {
         padding: 1.5rem !important;
     }
-    
+
     .py-5 {
         padding-top: 3rem !important;
         padding-bottom: 3rem !important;
