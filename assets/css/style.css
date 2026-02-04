@@ -162,6 +162,18 @@ h6 {
     overflow: hidden;
 }
 
+.split-image-responsive {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+@media (min-width: 992px) {
+    .split-image-responsive {
+        height: 100%;
+    }
+}
+
 .hero-section::before {
     content: "";
     position: absolute;
