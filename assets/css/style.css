@@ -11,14 +11,16 @@
     /* Solar Green */
     --secondary-color: #0c2b4b;
     /* Dark Blue */
-    --tertiary-color: #f8f9fa;
-    /* Light Gray */
-    --text-dark: #212529;
+    --tertiary-color: #f1f5f9;
+    /* Very Light Blue (Tint of Secondary) */
+    --text-dark: #0c2b4b;
+    /* Using Secondary for text */
     --text-light: #ffffff;
     --bg-light: #ffffff;
-    --bg-dark: #121212;
+    --bg-dark: #0c2b4b;
+    /* Dark Theme uses Secondary */
     --card-bg-light: #ffffff;
-    --card-bg-dark: #1e1e1e;
+    --card-bg-dark: #122c47;
     --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     --transition-speed: 0.3s;
 }
@@ -26,12 +28,12 @@
 [data-bs-theme="dark"] {
     --primary-color: #2ecc71;
     --secondary-color: #1a3c61;
-    --tertiary-color: #2c2c2c;
-    --text-dark: #e0e0e0;
-    --bg-light: #121212;
-    --bg-dark: #000000;
-    --card-bg-light: #1e1e1e;
-    color: #e0e0e0;
+    --tertiary-color: #122c47;
+    --text-dark: #f1f5f9;
+    --bg-light: #0c2b4b;
+    --bg-dark: #081a2d;
+    --card-bg-light: #122c47;
+    color: #f1f5f9;
 }
 
 /* --- Global Styles --- */
